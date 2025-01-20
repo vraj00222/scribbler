@@ -1,0 +1,42 @@
+{
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "1",
+      "metadata": {},
+      "outputs": [],
+      "source": [
+        "import pandas as pd\n",
+        "from scribbler import load_file\n",
+        "import matplotlib.pyplot as plt\n",
+        "import seaborn as sns\n",
+        "\n",
+        "# Load the CSV file\n",
+        "csv_file = load_file()\n",
+        "df = pd.read_csv(csv_file)\n",
+        "\n",
+        "# Show the head of the dataframe\n",
+        "df.head()"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "2",
+      "metadata": {},
+      "outputs": [],
+      "source": [
+        "# Group by a column and perform aggregation\n",
+        "grouped_df = df.groupby('column_name').sum()\n",
+        "\n",
+        "# Example visualization\n",
+        "sns.barplot(x='column_name', y='value', data=grouped_df)\n",
+        "plt.show()"
+      ]
+    }
+  ],
+  "metadata": {},
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
