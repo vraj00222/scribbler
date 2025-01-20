@@ -1,42 +1,32 @@
 {
+  "metadata": {
+    "name": "CSV Analysis Example",
+    "language_info": {
+      "name": "Python",
+      "version": "3.8"
+    }
+  },
+  "jsnbversion": "v0.1",
   "cells": [
     {
-      "cell_type": "code",
-      "execution_count": null,
-      "id": "1",
-      "metadata": {},
-      "outputs": [],
-      "source": [
-        "import pandas as pd\n",
-        "from scribbler import load_file\n",
-        "import matplotlib.pyplot as plt\n",
-        "import seaborn as sns\n",
-        "\n",
-        "# Load the CSV file\n",
-        "csv_file = load_file()\n",
-        "df = pd.read_csv(csv_file)\n",
-        "\n",
-        "# Show the head of the dataframe\n",
-        "df.head()"
-      ]
+      "code": "<h1>CSV Analysis Example</h1>\nThis notebook demonstrates how to load a CSV file and perform data analysis, including visualization and aggregation.",
+      "status": "",
+      "output": "<h1>CSV Analysis Example</h1>\nThis notebook demonstrates how to load a CSV file and perform data analysis, including visualization and aggregation.",
+      "type": "html"
     },
     {
-      "cell_type": "code",
-      "execution_count": null,
-      "id": "2",
-      "metadata": {},
-      "outputs": [],
-      "source": [
-        "# Group by a column and perform aggregation\n",
-        "grouped_df = df.groupby('column_name').sum()\n",
-        "\n",
-        "# Example visualization\n",
-        "sns.barplot(x='column_name', y='value', data=grouped_df)\n",
-        "plt.show()"
-      ]
+      "code": "import pandas as pd\nfrom scribbler import load_file\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\n# Load the CSV file\ncsv_file = load_file()\ndf = pd.read_csv(csv_file)\n\n# Show the head of the dataframe\ndf.head()",
+      "status": "",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "# Group by a column and perform aggregation\ngrouped_df = df.groupby('column_name').sum()\n\n# Example visualization\nsns.barplot(x='column_name', y='value', data=grouped_df)\nplt.show()",
+      "status": "",
+      "output": "",
+      "type": "code"
     }
   ],
-  "metadata": {},
-  "nbformat": 4,
-  "nbformat_minor": 5
+  "source": "https://github.com/gopi-suvanam/jsnb",
+  "run_on_load": false
 }
