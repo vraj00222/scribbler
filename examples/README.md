@@ -50,5 +50,8 @@ The below notebooks are samples/boilerplates to start experimenting/building.
 ### Machine Learning
 25. [Decentralized ML Using Brain.js](https://app.scribbler.live/#./examples/Decentralized-ML-Model-Storage.jsnb). Machine learming in the browser using Brain.js and storing the model as JSON in the local system. Can be modified to store the model in IPFS/Torrents.
 
+### Data Analysis
+26. [CSV Analysis Example](https://app.scribbler.live/#./examples/csv_analysis_example.jsnb). Example notebook for loading CSV files and performing data analysis, including visualization and aggregation.
+
 ### More examples!
 [List of sample notebooks on Scribbler](https://examples.scribbler.live/)
